@@ -1,4 +1,15 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
-<p>
-</p>
+<h1>Stupid Coaching</h1>
+<blockquote>
+  <p>
+    <% if @question.empty? %>
+
+    <% else %>
+      <%= @question %>
+    <% end %>
+    -You
+  </p>
+</blockquote>
+<blockquote>
+<p><%= @answer %></p>
+-Your coach
+</blockquote>
